@@ -342,11 +342,11 @@ for idx, sub in enumerate(subs):
     
     #And save the DF
     if locking=="stim":
-        df.to_csv(data_dir +'eeg data for Herregods model/Sub' + str(sub) +'_stim.csv')
+        df.to_csv(working_dir +'eeg_data/Sub' + str(sub) +'_stim.csv')
     if locking=="resp":
-        df.to_csv(data_dir +'eeg data for Herregods model/Sub' + str(sub) +'_resp.csv')
+        df.to_csv(working_dir +'eeg_data/Sub' + str(sub) +'_resp.csv')
     if locking=="cj":
-        df.to_csv(data_dir +'eeg data for Herregods model/Sub' + str(sub) +'_cj.csv')
+        df.to_csv(working_dir +'eeg_data/Sub' + str(sub) +'_cj.csv')
 
 
 
