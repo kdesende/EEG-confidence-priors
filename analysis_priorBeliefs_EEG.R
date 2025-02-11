@@ -31,9 +31,9 @@ error.bar <- function(x, y, upper, lower=upper, length=0,...){
 }
 
 #load the behavioral data which contains single-trial EEG amplitudes
-df <- readbulk::read_bulk(paste0(getwd(), "/Experiment/eeg data/eeg data for Herregods model/"),extension="stim.csv",verbose=F) #stim-locked
-df_resp <- readbulk::read_bulk(paste0(getwd(), "/Experiment/eeg data/eeg data for Herregods model/"),extension="resp.csv",verbose=F) #resp-locked
-df_cj <- readbulk::read_bulk(paste0(getwd(), "/Experiment/eeg data/eeg data for Herregods model/"),extension="cj.csv",verbose=F) #cj-locked
+df <- readbulk::read_bulk(paste0(getwd(), "/eeg_data/"),extension="stim.csv",verbose=F) #stim-locked
+df_resp <- readbulk::read_bulk(paste0(getwd(), "/eeg_data/"),extension="resp.csv",verbose=F) #resp-locked
+df_cj <- readbulk::read_bulk(paste0(getwd(), "/eeg_data/"),extension="cj.csv",verbose=F) #cj-locked
 
 #Exclude Sub 28, who performed terribly on easy trials
 df <- subset(df,sub!=28)
