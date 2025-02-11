@@ -13,3 +13,6 @@ eegConfidencePriorsPreprocessing.py contains the python code used to perform pre
 
 **EEG analysis code:**
 eegConfidencePriors.py contains the python code used to analyze the preprocessed EEG data using the python-mne toolbox
+
+**eeg_data:**
+this folder contains the csv files needed to run the behavioral and single-trial EEG mixed model analysis
